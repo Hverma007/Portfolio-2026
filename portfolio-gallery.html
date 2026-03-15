@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Harsh Verma's complete creative portfolio featuring 50+ projects including graphic designs, video edits, t-shirt designs, logos, social media content, and more.">
+    <meta name="keywords" content="portfolio gallery, design showcase, video projects, creative work, graphic design portfolio">
+    <title>Complete Portfolio Gallery - Harsh Verma | All Creative Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery-style.css">
+    <link rel="stylesheet" href="gallery-rebuild.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="gallery-v2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="rg2-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>Harsh Verma</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact" class="btn-contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="rg2-header">
+        <div class="container">
+            <a href="index.html#portfolio" class="rg2-back"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <h1>Gallery</h1>
+            <p>Rebuilt from scratch with clean grid and filters.</p>
+            <div class="rg2-filters" id="rg2Filters">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="logo-designing">Logo Designing</button>
+                <button data-filter="ui-ux-design">UI/UX Design</button>
+                <button data-filter="social-media-posters">Social Media Posters</button>
+                <button data-filter="package-designing">Package Designing</button>
+                <button data-filter="tshirt-designing">Tshirt Designing</button>
+                <button data-filter="card-designing">Card Designing</button>
+                <button data-filter="carousels">Carousels</button>
+                <button data-filter="thumbnails">Thumbnails</button>
+                <button data-filter="book-covers">Book Covers</button>
+                <button data-filter="motion-designing">Motion Designing</button>
+                <button data-filter="social-media-reels">Social Media Reels</button>
+            </div>
+            <p class="rg2-count" id="rg2Count">0 items</p>
+        </div>
+    </section>
+
+    <main class="rg2-main">
+        <div class="container">
+            <div class="rg2-grid" id="rg2Grid"></div>
+        </div>
+    </main>
+
+    <div class="rg2-lightbox" id="rg2Lightbox" aria-hidden="true">
+        <button class="rg2-close" id="rg2Close" aria-label="Close"><i class="fas fa-times"></i></button>
+        <button class="rg2-nav prev" id="rg2Prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="rg2-nav next" id="rg2Next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        <div class="rg2-lightbox-content">
+            <img id="rg2Image" alt="Preview">
+            <video id="rg2Video" controls playsinline></video>
+            <p id="rg2Caption"></p>
+        </div>
+    </div>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <a href="index.html#portfolio" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <h1 class="gallery-title">Creative Portfolio</h1>
+            <p class="gallery-subtitle">A comprehensive showcase of my design work, video projects, and creative endeavors</p>
+            
+            <!-- Filter Tabs -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="filter-btn" data-filter="thumbnail">
+                    <i class="fas fa-image"></i> Thumbnails
+                </button>
+                <button class="filter-btn" data-filter="carousels">
+                    <i class="fas fa-layer-group"></i> Carousels
+                </button>
+                <button class="filter-btn" data-filter="logo">
+                    <i class="fas fa-gem"></i> Logo
+                </button>
+                <button class="filter-btn" data-filter="reels">
+                    <i class="fas fa-film"></i> Reels
+                </button>
+                <button class="filter-btn" data-filter="motion-designing">
+                    <i class="fas fa-wand-magic-sparkles"></i> Motion Designing
+                </button>
+                <button class="filter-btn" data-filter="video-editing">
+                    <i class="fas fa-video"></i> Video Editing
+                </button>
+                <button class="filter-btn" data-filter="posters">
+                    <i class="fas fa-file-image"></i> Posters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-header">
+                <span class="section-badge">Featured</span>
+                <h2>Best Work</h2>
+                <p>Showcasing my most impactful and creative projects</p>
+            </div>
+
+            <div class="featured-grid">
+                <!-- Featured Item 1 - Large -->
+                <div class="featured-item featured-large">
+                    <div class="featured-image">
+                        <img src="gallery/67e3d948bc11066bee9e7d9a_Black Vintage Cowgirl Illustration T-shirt Design-p-500.png" alt="Featured T-shirt Design">
+                        <div class="featured-overlay">
+                            <span class="featured-tag">Apparel Design</span>
+                            <h3>Vintage Cowgirl Collection</h3>
+                            <p>Unique vintage-inspired t-shirt design featuring bold illustrations and classic western aesthetics</p>
+                            <button class="featured-btn" onclick="openLightbox('gallery/67e3d948bc11066bee9e7d9a_Black Vintage Cowgirl Illustration T-shirt Design-p-500.png', 'image')">
+                                <span>View Full Size</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 2 -->
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="gallery/67e506d547947274e8cd16c5_Black and White Monogram Logo.png" alt="Black and White Monogram Logo">
+                        <div class="featured-overlay">
+                            <span class="featured-tag">Branding</span>
+                            <h3>Black and White Monogram Logo</h3>
+                            <p>Minimalist black and white logo with timeless appeal</p>
+                            <button class="featured-btn" onclick="openLightbox('gallery/67e506d547947274e8cd16c5_Black and White Monogram Logo.png', 'image')">
+                                <span>View</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 3 -->
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="gallery/CUSTOMIZE VECTOR ART.png" alt="Featured Vector Art">
+                        <div class="featured-overlay">
+                            <span class="featured-tag">Illustration</span>
+                            <h3>Custom Vector Art</h3>
+                            <p>Detailed vector illustration with modern aesthetics</p>
+                            <button class="featured-btn" onclick="openLightbox('gallery/CUSTOMIZE VECTOR ART.png', 'image')">
+                                <span>View</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 4 - Wide -->
+                <div class="featured-item featured-wide">
+                    <div class="featured-image">
+                        <img src="gallery/67e3d98c6954ac8098702932_White and Grey Vintage Money Streetwear T-shirt Design-p-500.png" alt="Featured Streetwear">
+                        <div class="featured-overlay">
+                            <span class="featured-tag">Streetwear</span>
+                            <h3>Money Streetwear Design</h3>
+                            <p>Bold streetwear design combining vintage elements with contemporary style</p>
+                            <button class="featured-btn" onclick="openLightbox('gallery/67e3d98c6954ac8098702932_White and Grey Vintage Money Streetwear T-shirt Design-p-500.png', 'image')">
+                                <span>View Full Size</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 5 -->
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="gallery/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500.jpg" alt="Featured Book Cover">
+                        <div class="featured-overlay">
+                            <span class="featured-tag">Publishing</span>
+                            <h3>Book Cover Design</h3>
+                            <p>Professional book cover with eye-catching design</p>
+                            <button class="featured-btn" onclick="openLightbox('gallery/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500.jpg', 'image')">
+                                <span>View</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Video -->
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <video src="gallery/Disappearing Trigger Effect.mov" poster="gallery/1.jpg"></video>
+                        <div class="video-badge">
+                            <i class="fas fa-play"></i>
+                            <span>Video</span>
+                        </div>
+                        <div class="featured-overlay">
+                            <span class="featured-tag">Psychology</span>
+                            <h3>Disappearing Trigger Effect</h3>
+                            <p>Educational video on psychological concepts</p>
+                            <button class="featured-btn" onclick="openLightbox('gallery/Disappearing Trigger Effect.mov', 'video')">
+                                <span>Watch</span>
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- All Images from Gallery Folder -->
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/1.jpg" alt="Design 1">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Design</span>
+                            <h3>Professional Work</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/1.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/1.png" alt="Design 2">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Branding</span>
+                            <h3>Logo Collection</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/1.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/2.png" alt="Design 3">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Logo Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/2.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/3.png" alt="Design 4">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Vector Art</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/3.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/4.jpg" alt="Design 5">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Illustration</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/4.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e3d948bc11066bee9e7d9a_Black Vintage Cowgirl Illustration T-shirt Design-p-500.png" alt="T-shirt Design">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Apparel</span>
+                            <h3>Vintage Cowgirl T-Shirt</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e3d948bc11066bee9e7d9a_Black Vintage Cowgirl Illustration T-shirt Design-p-500.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e3d98c6954ac8098702932_White and Grey Vintage Money Streetwear T-shirt Design-p-500.png" alt="Streetwear Design">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Apparel</span>
+                            <h3>Money Streetwear Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e3d98c6954ac8098702932_White and Grey Vintage Money Streetwear T-shirt Design-p-500.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e50419ceae768fbcebc54b_1-p-500.webp" alt="Web Design">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Web Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e50419ceae768fbcebc54b_1-p-500.webp', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500.jpg" alt="Book Cover">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Publishing</span>
+                            <h3>Book Cover Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/CMS INVESTMINT/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500 (1).jpg" alt="Book Cover Variant">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Publishing</span>
+                            <h3>Book Cover Variant</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/CMS INVESTMINT/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500 (1).jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e504b66b04f9d7154b42db_$10,000 Side Hustle-p-500.jpg" alt="Side Hustle">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Marketing Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e504b66b04f9d7154b42db_$10,000 Side Hustle-p-500.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e50633d5fcce251c11c7c4_6-p-500.png" alt="Creative Design">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Creative Art</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e50633d5fcce251c11c7c4_6-p-500.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e506d547947274e8cd16c5_Black and White Monogram Logo.png" alt="Black and White Monogram Logo">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Black and White Monogram Logo</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e506d547947274e8cd16c5_Black and White Monogram Logo.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/CUSTOMIZE VECTOR ART.png" alt="Vector Art">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Custom Vector Art</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/CUSTOMIZE VECTOR ART.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/photo_6129514610747885012_y.jpg" alt="Photo Design">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Photo Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/photo_6129514610747885012_y.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/photo_6129514610747885015_y.jpg" alt="Photo Design 2">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Creative Photo</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/photo_6129514610747885015_y.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/photo_6129514610747885018_y.jpg" alt="Photo Design 3">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Photo Edit</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/photo_6129514610747885018_y.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/photo_6215087144016399167_y.jpg" alt="Photo Design 4">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Design Work</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/photo_6215087144016399167_y.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/photo_6215087144016399168_y.jpg" alt="Photo Design 5">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Design Portfolio</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/photo_6215087144016399168_y.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/CMS INVESTMINT/POST.png" alt="Social Media Post">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Social Media</span>
+                            <h3>Investment Content</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/CMS INVESTMINT/POST.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/CMS INVESTMINT/POST (1).png" alt="Social Media Post 2">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Image</span>
+                            <h3>Social Media Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/CMS INVESTMINT/POST (1).png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/D1.png" alt="Design Work">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Design</span>
+                            <h3>Creative Design</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/D1.png', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="image">
+                    <div class="gallery-item-inner">
+                        <img src="gallery/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500.jpg" alt="Book Cover 2">
+                        <div class="gallery-overlay">
+                            <span class="item-type">Publishing</span>
+                            <h3>Epub Book Cover</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/67e504b4c34467f09b9ddffb_Book Cover Epub-p-500.jpg', 'image')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All Videos from Gallery Folder -->
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/Disappearing Trigger Effect.mov" poster="gallery/1.jpg"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Psychology</span>
+                            <h3>Disappearing Trigger Effect</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/Disappearing Trigger Effect.mov', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/document_6253750791346067424.mp4" poster="gallery/2.png"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video Edit</span>
+                            <h3>Creative Content 1</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/document_6253750791346067424.mp4', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/document_6253750791346067425.mp4" poster="gallery/3.png"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video</span>
+                            <h3>Video Project 2</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/document_6253750791346067425.mp4', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/document_6253750791346067426.mp4" poster="gallery/4.jpg"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video</span>
+                            <h3>Video Project 3</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/document_6253750791346067426.mp4', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/document_6253750791346067427.mp4" poster="gallery/1.png"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video</span>
+                            <h3>Video Project 4</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/document_6253750791346067427.mp4', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/document_6255618642558328277.mp4" poster="gallery/2.png"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video</span>
+                            <h3>Video Project 5</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/document_6255618642558328277.mp4', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/Emotional Scar Planting – किसी के दिमाग में ऐसी छा.mov" poster="gallery/3.png"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video</span>
+                            <h3>Emotional Scar Planting</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/Emotional Scar Planting – किसी के दिमाग में ऐसी छा.mov', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/Guilt Loop – किसी को उनकी ही गलती से कंट्रोल करो.mov" poster="gallery/4.jpg"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video</span>
+                            <h3>Guilt Loop</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/Guilt Loop – किसी को उनकी ही गलती से कंट्रोल करो.mov', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="video">
+                    <div class="gallery-item-inner">
+                        <video src="gallery/Reverse Jealousy Trick – बिना कुछ बोले किसी को जला.mov" poster="gallery/1.jpg"></video>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Video</span>
+                            <h3>Reverse Jealousy Trick</h3>
+                            <button class="view-btn" onclick="openLightbox('gallery/Reverse Jealousy Trick – बिना कुछ बोले किसी को जला.mov', 'video')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-indicator">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDFs - Only 2 Investmint Carousel PDFs -->
+                <div class="gallery-item" data-type="pdf">
+                    <div class="gallery-item-inner pdf-item">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Document</span>
+                            <h3>Investmint Carousel 1</h3>
+                            <button class="view-btn" onclick="openPDF('gallery/CMS INVESTMINT/Investmint 1.pdf')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-type="pdf">
+                    <div class="gallery-item-inner pdf-item">
+                        <div class="pdf-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="item-type">Document</span>
+                            <h3>Investmint Carousel 2</h3>
+                            <button class="view-btn" onclick="openPDF('gallery/CMS INVESTMINT/Investmint 2.pdf')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous item">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav next" id="lightboxNext" aria-label="Next item">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <video id="lightboxVideo" controls></video>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="gallery-v2.js"></script>
+</body>
+</html>
