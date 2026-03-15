@@ -167,8 +167,8 @@ In `portfolio-gallery.html`, add new items:
 
 ## 📞 Contact Information
 
-- **WhatsApp**: +91 9817123456
-- **Email**: harshverma.creative@gmail.com
+- **WhatsApp**: +91 9817121810
+- **Email**: harshvermastudio@gmail.com
 - **Location**: India
 
 ## 🔗 Social Media
@@ -182,7 +182,7 @@ Update social media links in footer:
 
 ## 📈 Stats
 
-- **Experience**: 3+ Years
+- **Experience**: 4+ Years
 - **Projects Completed**: 50+
 - **Happy Clients**: 30+
 - **Satisfaction Rate**: 100%
